@@ -6,6 +6,8 @@ pipeline {
          steps{
            sh '''
              git version
+             echo $BUILD_NUMBER
+             echo $TAG_NAME
            '''
            echo 'build'
          }
